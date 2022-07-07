@@ -169,10 +169,10 @@ class Fs extends FlysystemFs
     protected function getConfigArray(): array
     {
         $endpoint = App::parseEnv($this->endpoint);
-
-        if (!str_contains($endpoint, 'https')) {
-            $endpoint = 'https://' .  $endpoint;
-        }
+//
+//        if (!str_contains($endpoint, 'https')) {
+//            $endpoint = 'https://' .  $endpoint;
+//        }
 
         return [
             'version'      => 'latest',
